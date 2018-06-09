@@ -40,3 +40,5 @@ class Spotkanie(object):
                     break
             else:
                 print('Zla decyzja, sprobuj jeszcze raz')
+    def korytarz(self):
+        print("Zwiedzasz korytarze Hogwartu i podziwiasz obrazy znanych czarodziei. Może jednak w końcu weźmiesz się do roboty")
