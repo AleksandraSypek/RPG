@@ -16,3 +16,4 @@ class Bohater(object):
         self.spryt = random.randint(0, 10)
     def show(self):
         print('imie: ' + str(self.imie) + '\ninteligencja:' + str(self.inteligencja) + '\nwiedza: ' + str(self.wiedza) + '\nsila: ' + str(self.sila) + '\nodwaga: ' + str(self.odwaga) + '\nspryt: ' + str(self.spryt))
+    def edit(self):

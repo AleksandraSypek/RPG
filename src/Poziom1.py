@@ -1,10 +1,13 @@
 import src.Spotkanie
-
-
+import pickle
+f = open("save.obj", "rb")
+a = pickle.load(f)
+a.show()
 print('Znajdujesz się na poziomie 1. Możesz udać się na pólnoc, wschod zachod lub poludnie')
 rooms = {
-    0 : {"name" : "Korytarz", "north" : 1, "east" : 2, "south" : 3, "west" : 4},
-    1 : {"name" : 'Latanie', "south" : 0} # itd tu uzupełinasz według schematu który Ci wyślę i uzupełniasz nazwy pokoi
+    0 : {"name" : "Korytarz", "północ" : 1, "wschód" : 2, "południe" : 3, "zachód" : 4},
+    1 : {"name" : 'Latanie', "południe" : 0}, # itd tu uzupełinasz według schematu który Ci wyślę i uzupełniasz nazwy pokoi
+    2 : {"name" : "Numerologia", "zachód" : 0 }
 }
 
 currentRoom = 0
@@ -28,7 +31,8 @@ while True:
             src.Spotkanie.Spotkanie().latanie()
         if rooms[currentRoom]["name"] == "Korytarz":
             src.Spotkanie.Spotkanie().korytarz()
-
+        if rooms[currentRoom]["name"] == "Numerologia":
+            src.Spotkanie.Spotkanie().numerologia()
     if move[0] == "help":
         lista = []
         print("Możesz udać się na:")
