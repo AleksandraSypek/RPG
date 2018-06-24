@@ -19,10 +19,10 @@ def walka(bohater, przeciwnik):
         zakleciePrzeciwnik = random.randint(1,6)
         print(str(zakleciePrzeciwnik) + " to siła zaklęcia przeciwnika")
         if zakleciePrzeciwnik < zaklecieBohater:
-            print("Ale mu jebłeś")
+            print("Ale mu uderzyłeś")
             przeciwnik.zdrowie = przeciwnik.zdrowie - zaklecieBohater
         elif zakleciePrzeciwnik > zaklecieBohater:
-            print("Dostałeś bułe na ryj")
+            print("Dostałeś w twarz")
             bohater.zdrowie = bohater.zdrowie - zakleciePrzeciwnik
         else:
             print("Nie trafiłeś")

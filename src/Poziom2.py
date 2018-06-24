@@ -33,7 +33,7 @@ while True:
         os.system("Poziom2.py")
     else:
         if bohater.zdrowie <= 0:
-            print("Gejm ołwer")
+            print("Game over")
             os.system("Menu.py")
         print("Jesteś obecnie w " + pokoje[obecnyPokoj]["nazwa"])
         ruch = input("> ").lower().split()

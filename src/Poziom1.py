@@ -23,7 +23,7 @@ def walka(bohater, przeciwnik):            #funkcja
             print("Ale go uderzyłeś")
             przeciwnik.zdrowie = przeciwnik.zdrowie - zaklecieBohater
         elif zakleciePrzeciwnik > zaklecieBohater:
-            print("Dostałeś w ryj")
+            print("Dostałeś w twarz")
             bohater.zdrowie = bohater.zdrowie - zakleciePrzeciwnik
         else:
             print("Nie trafiłeś")
